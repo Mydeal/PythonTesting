@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 import time
 
-driver = webdriver.Chrome()
+driver = webdriver.Opera()
 try:
     driver.get("https://www.facebook.com/?stype=lo&jlou=Afd4QGVsCZO7OOZ4nbLCosM598Rh6CoX2HYQuYYnDjAlqDrOgNyKA9hxIsD2rhcm5rU8Psm9n6SoygaDhN81ZmVvtHoiwjGVKivO4cMtSR8uyg&smuh=4747&lh=Ac-J2RwrgBZoWCNW")
     driver.maximize_window()
@@ -15,7 +15,7 @@ try:
     select.select_by_value("3")
     select = Select(driver.find_element_by_name("birthday_month"))
     select.select_by_value("7")
-    select = Select(driver.find_element_by_name("birthday_year"))
+    select = Select(driver.find_element_by_name("birthdaay_year"))
     select.select_by_value("2001")
     driver.find_element_by_xpath("//input[@name='sex'][@value='2']").click()   
     
