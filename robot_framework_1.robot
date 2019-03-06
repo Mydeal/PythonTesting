@@ -1,8 +1,6 @@
 ***Settings***
 
 Library  SeleniumLibrary
-Test Setup  zacznij  ${url}
-Test Teardown  zamknij
 
 ***Variables***
 
@@ -11,19 +9,30 @@ ${NAME}  Nauka i technika
 
 ***Test Cases***
 
-start
-    kliknij  ${NAME}
+first-test-case
+    Given zacznij  ${URL}
+    and maximize
+    When click  ${NAME}
+    Then close
     
 
 ***Keywords***
 
-Zacznij
+zacznij
     [Arguments]  ${url}
     Open Browser  ${url}  chrome
+maximize
     Maximize Browser Window
-zamknij
+close
     Close Browser
 
-kliknij
+click
     [Arguments]  ${name}
     Click Element  xpath://div[@aria-label="${name}"]/a[@class="SFllF" and @tabindex = '0']
+
+
+***Comments***
+ Given When Then and <- po tych słowach kluczowych tylko 1 spacja przerwy
+ Test Setup  zacznij  ${url}
+ Test Teardown  zamknij
+ 
