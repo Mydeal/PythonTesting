@@ -1,0 +1,15 @@
+-uzyskanie metodą GET strony allegro.pl,
+-zaakceptowanie regulaminu strony,
+-kliknięcie w zakładkę Elektronika na lewym pasku strony,
+-wykonanie zrzutu,
+-wpisanie na pasku wyszukiwania frazy "Aparat cyfrowy",
+-kliknięcie przycisku szukaj,
+-wykonanie zrzutu,
+-kliknięcie w ikonę koszyka na górnym pasku,
+-wykonanie zrzutu,
+-kliknięcie w zakładkę Moje Allegro na górnym pasku,
+-kliknięcie w opcję załórz kąto w menu kontekstowym,
+-wypęłnienie formularza i pozostawienie pustego miejsca przeznaczonego na E-mail,
+-próba wysłania formularza,
+-wykonanie zrzutu
+
