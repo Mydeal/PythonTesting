@@ -1,8 +1,11 @@
-***Settings***
-    ${URL} https://allegro.pl/
-    ${NAME} departments_Elektronika
+*** Settings ***
+Library  Selenium2Library
 
-***Test Cases***
+*** Variables ***
+${URL}  https://allegro.pl/
+${NAME}  departments_Elektronika
+
+*** Test Cases ***
 
 first-test-case
     Given get   ${URL} 
@@ -10,11 +13,11 @@ first-test-case
     When click   ${NAME}
     Then close
 
-***Keywords***
+*** Keywords ***
 
 get
-    [Arguments] ${url}
-    Open Browser ${url} chrome
+    [Arguments]  ${url}
+    Open Browser  ${url} chrome
 maximize
     Maximize Browser Window
 close
