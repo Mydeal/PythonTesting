@@ -3,31 +3,30 @@ Library  Selenium2Library
 
 *** Variables ***
 ${URL}  https://allegro.pl/
-${NAME}  departments_Elektronika
+${REGULATION_BUTTON_XPATH}  xpath://button[@class="_13q9y _8tsq7 _7qjq4 _qozgg"]
+${ELECTRONICS_XPATH}  xpath://a[@class="_sm3us _1241k _882d6_Ra6-P"]
 
 *** Test Cases ***
 
 first-test-case
     Given get   ${URL} 
     and Maximize
-    When click   ${NAME}
+    When click   ${REGULATION_BUTTON_XPATH}
+    Then click  ${ELECTRONICS_XPATH}
     Then close
 
 *** Keywords ***
 
 get
     [Arguments]  ${url}
-    Open Browser  ${url} chrome
+    Open Browser  ${url}
 maximize
     Maximize Browser Window
 close
     Close Browser
 click
-    [Arguments]  ${name}
-    Click Element  xpath://div[@aria-label="${name}"]/a[@class="SFllF" and @tabindex = '0']
+    [Arguments]  ${xpath}
+    Click Element  ${xpath}
 
 
 ***Comments***
- Given When Then and <- po tych słowach kluczowych tylko 1 spacja przerwy
- Test Setup  zacznij  ${url}
-Test Teardown zamknij
