@@ -58,7 +58,7 @@ enter
  Test Setup  zacznij  ${url}
  Test Teardown  zamknij
 
- petrurirta@desoz.com
- nifyuhordu@desoz.com
- princeanthony.aidden@cowstore.org
+ petrurirta@desoz.com  Pa$$w0rd
+ nifyuhordu@desoz.com  Pa$$w0rd2
+ princeanthony.aidden@cowstore.org  Pa$$w0rd3
  
